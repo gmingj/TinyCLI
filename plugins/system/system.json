@@ -1,0 +1,12 @@
+{
+    "name": "system",
+    "description": "Basic system commands",
+    "version": "1.0.0",
+    "commands": [
+        { "name": "ls", "help": "List directory contents", "handler": "system_ls_handler" },
+        { "name": "cd", "help": "Change directory", "handler": "system_cd_handler" },
+        { "name": "pwd", "help": "Print working directory", "handler": "system_pwd_handler" },
+        { "name": "cat", "help": "Display file contents", "handler": "system_cat_handler" },
+        { "name": "echo", "help": "Display a line of text", "handler": "system_echo_handler" }
+    ]
+} 
