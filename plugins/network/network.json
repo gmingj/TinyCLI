@@ -1,0 +1,26 @@
+{
+  "name": "network",
+  "description": "Network configuration commands",
+  "version": "1.0",
+  "commands": [
+    {
+      "name": "interface",
+      "view": "config",
+      "description": "Configure network interfaces",
+      "handler": "network_interface_handler"
+    },
+    {
+      "name": "ip",
+      "view": "feature",
+      "description": "Configure IP parameters",
+      "handler": "network_ip_handler"
+    },
+    {
+      "name": "show",
+      "view": "privileged",
+      "description": "Show network information",
+      "handler": "network_show_handler"
+    }
+  ],
+  "library": "libnetwork.so"
+} 

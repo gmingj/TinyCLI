@@ -1,0 +1,26 @@
+{
+  "name": "system",
+  "description": "System configuration commands",
+  "version": "1.0",
+  "commands": [
+    {
+      "name": "hostname",
+      "view": "config",
+      "description": "Configure system hostname",
+      "handler": "system_hostname_handler"
+    },
+    {
+      "name": "timezone",
+      "view": "config",
+      "description": "Configure system timezone",
+      "handler": "system_timezone_handler"
+    },
+    {
+      "name": "show",
+      "view": "privileged",
+      "description": "Show system information",
+      "handler": "system_show_handler"
+    }
+  ],
+  "library": "libsystem.so"
+} 

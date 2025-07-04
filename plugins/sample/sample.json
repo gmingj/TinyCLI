@@ -1,0 +1,20 @@
+{
+  "name": "sample",
+  "description": "Sample plugin for TinyCLI",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "status",
+      "view": "view_privileged",
+      "description": "Show system status",
+      "handler": "sample_status_handler"
+    },
+    {
+      "name": "info",
+      "view": "view_privileged",
+      "description": "Show system information",
+      "handler": "sample_info_handler"
+    }
+  ],
+  "library": "libsample_plugin.so"
+}
